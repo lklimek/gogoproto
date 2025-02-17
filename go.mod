@@ -3,7 +3,6 @@ module github.com/cosmos/gogoproto
 go 1.22
 
 require (
-	github.com/cosmos/gogoproto v1.7.0
 	github.com/golang/protobuf v1.5.4
 	github.com/google/go-cmp v0.6.0
 	github.com/tendermint/go-amino v0.16.0
@@ -21,6 +20,3 @@ require (
 
 // API changed in an incompatible way
 retract v1.4.8
-
-// our own fork
-replace github.com/cosmos/gogoproto => github.com/lklimek/gogoproto v1.7.0
