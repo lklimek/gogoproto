@@ -1,24 +1,26 @@
 module github.com/cosmos/gogoproto
 
-go 1.19
+go 1.22
 
 require (
-	github.com/golang/protobuf v1.5.3
+	github.com/cosmos/gogoproto v1.7.0
+	github.com/golang/protobuf v1.5.4
 	github.com/google/go-cmp v0.6.0
 	github.com/tendermint/go-amino v0.16.0
-	google.golang.org/grpc v1.62.1
-	google.golang.org/protobuf v1.32.0
+	google.golang.org/grpc v1.70.0
+	google.golang.org/protobuf v1.36.5
 )
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
-	github.com/google/gofuzz v1.2.0 // indirect
-	github.com/stretchr/testify v1.8.4 // indirect
-	golang.org/x/net v0.20.0 // indirect
-	golang.org/x/sys v0.16.0 // indirect
-	golang.org/x/text v0.14.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20240123012728-ef4313101c80 // indirect
+	golang.org/x/net v0.35.0 // indirect
+	golang.org/x/sys v0.30.0 // indirect
+	golang.org/x/text v0.22.0 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20250212204824-5a70512c5d8b // indirect
 )
 
 // API changed in an incompatible way
 retract v1.4.8
+
+// our own fork
+replace github.com/cosmos/gogoproto => ./
