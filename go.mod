@@ -23,4 +23,4 @@ require (
 retract v1.4.8
 
 // our own fork
-replace github.com/cosmos/gogoproto => ./
+replace github.com/cosmos/gogoproto => github.com/lklimek/gogoproto v1.7.0
